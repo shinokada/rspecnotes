@@ -2,8 +2,17 @@
 
 ## describe and context
 
-Use `describe` to describe methods, class methods and instance methods.  Use context to test states for example when 
+Use `describe` to describe methods, class methods and instance methods.
+
+    describe ".authenticate" do
+    describe "#admin?"
+
+Use `context` to test states for example when 
 describing a context, start its description with "when" or "with".
+
+    context "when logged in" do
+      it {should respond_with 200}
+    end
 
 ## expect not should
 
@@ -30,6 +39,16 @@ describing a context, start its description with "when" or "with".
     expect { account.renew }.not_to raise_error
 
 ## `it` and `specify` are identical methods
+
+## Single expectation test
+
+    it { should respond_with_content_type(:json) }
+    it { should assign_to(:resource) }
+
+## Use the subject
+
+    subject { assigns("message") }
+    it { should match ...}
 
 
 
