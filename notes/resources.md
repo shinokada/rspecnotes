@@ -2,6 +2,8 @@
 
 ## Documentations
 
+[RSpec Expectations 3.0](https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs/syntax-configuration)
+
 [Rspec](https://www.relishapp.com/rspec/)
 
 [Better Specs](http://betterspecs.org/)
